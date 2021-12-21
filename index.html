@@ -149,17 +149,17 @@
       height:100%; 
     }
     
-    .grid > div:hover .text .description{
-      opacity:1;
-      display: block;
-    }
-    
     .description{
-      display: none;
+      height:0;
       opacity:0; 
-      transition:opacity 1s;
+      transition:opacity 1s, height 0.4s;
       font-size:18px;
       margin-top:20px;
+    }
+    
+    .grid > div:hover .text .description{
+      opacity:1;
+      height: 50%;
     }
     
     footer{
