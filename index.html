@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="css/fontello.css" rel="stylesheet">
   </head>
   
   <style>
@@ -27,17 +28,37 @@
       background-position:center;
     }
     
-    nav ul{
+    header ul{
       margin:0;
       list-style:none;
       display:flex;
-      color:white;
+      gap:20px;
     }
+    
+    header ul li{
+      padding:10px; 
+    }
+    
+    .top_banner ul li{
+      color:white; 
+    }
+    
+    nav ul{
+      background:white;      
+      color:#D4ACA3;      
+    }        
     
   </style>
   
   <body>
     <header>
+      <div class="top_banner">
+        <ul>
+          <li><i class="icon-basket"></i> cart (0)</li>
+          <li>checkout</li>
+        </ul>
+      </div>
+      <div class="logo"></div>
       <nav>
         <ul>
           <li>home</li>
