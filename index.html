@@ -108,15 +108,15 @@
       align-items: baseline;
     }
     
-    .grid div:nth-of-type(1){
+    .grid > div:nth-of-type(1){
       background-image:url('swaddle.jpg');      
     }
     
-    .grid div:nth-of-type(2){
+    .grid > div:nth-of-type(2){
       background-image:url('bedding.jpg');      
     }
     
-    .grid div:nth-of-type(3){
+    .grid > div:nth-of-type(3){
       background-image:url('towels.jpg');      
     }
     
@@ -137,6 +137,15 @@
     
     .grid > div:hover .text{
       height:100%; 
+    }
+    
+    .grid > div:hover .text .description{
+      opacity:1;
+    }
+    
+    .description{
+      opacity:0; 
+      transition:opacity:0.4s;
     }
             
   </style>
@@ -171,13 +180,22 @@
       </div>
       <div class="grid">
         <div>
-          <div class="text">cotton swaddles</div>
+          <div class="text">
+            cotton swaddles
+            <div class="description">kjfjf jfkkfykufkf  kyuuf yu ykuf uf f kf kuyf kuf k f uf kuf </div>
+          </div>
         </div>
         <div>
-          <div class="text">cotton bedding</div>
+          <div class="text">
+            cotton bedding
+            <div class="description">kjfjf jfkkfykufkf  kyuuf yu ykuf uf f kf kuyf kuf k f uf kuf </div>
+          </div>
         </div>
         <div>
-          <div class="text">cotton accessories</div>
+          <div class="text">
+            cotton accessories
+            <div class="description">kjfjf jfkkfykufkf  kyuuf yu ykuf uf f kf kuyf kuf k f uf kuf </div>
+          </div>
         </div>
       </div>
     </div>
