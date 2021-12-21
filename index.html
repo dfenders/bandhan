@@ -103,18 +103,24 @@
       height: 500px;
       background-size:cover;
       background-position:center;
+      display:flex;      
+      align-items: baseline;
     }
     
     .grid div:first-of-type{
       background-image:url('swaddle.jpg');      
     }
     
-    .grid div .text{
+    .grid > div .text{
+      width:100%;
       text-align:center;
       padding:20px; 
       font-size:24px;
-      background:white;
-      color:#D4ACA3;
+      background:#D4ACA3;
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
     }
             
   </style>
@@ -151,8 +157,12 @@
         <div>
           <div class="text">cotton swaddles</div>
         </div>
-        <div></div>
-        <div></div>
+        <div>
+          <div class="text">cotton bedding</div>
+        </div>
+        <div>
+          <div class="text">cotton accessories</div>
+        </div>
       </div>
     </div>
   </body>
