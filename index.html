@@ -101,7 +101,7 @@
     
     .grid > div{
       background-color: #D4ACA3;
-      height: 500px;
+      height: 600px;
       background-size:cover;
       background-position:center;
       display:flex;      
@@ -117,6 +117,7 @@
     }
     
     .grid > div .text{
+      box-sizing:border-box;
       width:100%;
       text-align:center;
       padding:20px; 
@@ -126,6 +127,12 @@
       display:flex;
       align-items:center;
       justify-content:center;
+      height:auto;
+      transition:height 0.4s;
+    }
+    
+    .grid > div:hover .text{
+      height:100%; 
     }
             
   </style>
