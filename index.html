@@ -104,13 +104,28 @@
         
     .grid{
       display:grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(1fr, 3);
+      gap:30px;
+    }
+    
+    .new_grid{
+      display:grid;
+      grid-template-columns: repeat(1fr, 6)r;
       gap:30px;
     }
     
     .grid > div{
       background-color: #D4ACA3;
       height: 600px;
+      background-size:cover;
+      background-position:center;
+      display:flex;      
+      align-items: baseline;
+    }
+    
+    .new_grid > div{
+      background-color: #D4ACA3;
+      height: 300px;
       background-size:cover;
       background-position:center;
       display:flex;      
@@ -240,7 +255,15 @@
       </div>
       <div class="divider">
         new products
-      </div>      
+      </div>
+      <div class="new_grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
     <footer>
       <div class="footer_grid">
