@@ -22,7 +22,7 @@
       width:100%;
     }
     
-    header > * > *{
+    header > * > *, .grid{
       max-width: 70%; 
     }
     
@@ -82,7 +82,19 @@
       color:#D4ACA3;      
       justify-content:center;
       padding-bottom:20px;
+      gap: 30px;
     }        
+        
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap:30px;
+    }
+    
+    .grid div{
+      background: #D4ACA3;
+      height: 500px;
+    }
     
   </style>
   
@@ -108,8 +120,14 @@
           <li>contact</li>
         </ul>
       </nav>
-      <div class="hero"></div>    
-        
+      <div class="hero"></div>            
     </header>
+    <div class="content">
+      <div class="grid">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
   </body>
 </html>
