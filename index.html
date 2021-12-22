@@ -27,7 +27,7 @@
       width:100%;
     }
     
-    header > * > *, .grid, .new_grid{
+    header > * > *, .grid, .new_grid, .footer_grid{
       max-width: 70%; 
       margin: auto;
     }
@@ -200,7 +200,6 @@
       grid-template-columns:repeat(3, 1fr);
       gap:30px;
       color:white;
-      max-width: 70%;
       margin: auto;
       text-align: center;
     }
@@ -229,8 +228,9 @@
       justify-content: space-evenly; 
     }
     
-    @media screen and (width:1024px){
+    @media screen and (max-width:1024px){
       .grid, .new_grid, .footer_grid{
+          max-width:100%;
           grid-template-columns:1fr;
       }
     }
