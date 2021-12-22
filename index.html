@@ -54,10 +54,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      height:200px;
+      overflow:hidden;
     }
     
     .logo img{
-      height:200px; 
+      height:250px; 
     }
     
     .logo span{
@@ -195,7 +197,7 @@
     
     .footer_grid{
       display:grid;
-      grid-template-columns:1fr 1fr 1fr;
+      grid-template-columns:repeat(3, 1fr);
       gap:30px;
       color:white;
       max-width: 70%;
@@ -225,6 +227,12 @@
       font-size: 24px;
       display: flex;
       justify-content: space-evenly; 
+    }
+    
+    @media screen and (width:1024px){
+      .grid, .new_grid, .footer_grid{
+          grid-template-columns:1fr;
+      }
     }
             
   </style>
