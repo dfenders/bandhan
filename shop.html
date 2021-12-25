@@ -1,1 +1,357 @@
-shop
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bandhan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet">
+    <link href="css/fontello-codes.css" rel="stylesheet">
+  </head>
+  
+  <style>
+    
+    body{
+      margin:0;      
+      font-family:'Comfortaa', sans-serif;
+    }
+    
+    a{
+      text-decoration:none;
+      color:white;
+    }
+    
+    h2{
+      font-size:24px;
+      font-weight:300;
+    }
+    
+    header{
+      background:#D4ACA3;
+      min-height:20px;
+      width:100%;
+    }
+    
+    header > * > *, .grid, .new_grid, .footer_grid{
+      max-width: 70%; 
+      margin: auto;
+    }
+    
+    input[type="text"]{
+      border:none;
+      padding:10px;
+      width:300px;
+      font-family: 'Comfortaa';
+    }
+    
+    .hero{
+      height:60vh;
+      background-image:url('bandhan_banner.jpg');
+      background-size:cover;
+      background-position:center;
+    }
+    
+    .logo{
+      background:white; 
+    }
+    
+    .logo > div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height:200px;
+      overflow:hidden;
+    }
+    
+    .logo img{
+      height:250px; 
+    }
+    
+    .logo span{
+      font-size: 100px;
+      font-weight: 300;
+      color: #D4ACA3; 
+    }
+    
+    header ul{
+      padding: 0;
+      list-style:none;
+      display:flex;
+      align-items:center;
+      gap:20px;
+    }
+    
+    header ul li{
+      padding:15px 5px; 
+      font-size:18px;
+    }
+    
+    .top_banner ul li{
+      color:white; 
+    }
+    
+    .top_banner ul li:nth-of-type(2){
+      margin-left:auto; 
+    }
+    
+    nav{
+       background:white; 
+    }
+    
+    nav ul{          
+      color:#88746b;      
+      justify-content:center;
+      padding-bottom:20px;
+      gap: 30px;      
+    }        
+    
+    nav ul li{
+      font-size:24px!important;
+    }
+    
+    .divider{
+      padding:30px;
+      text-align:center;
+      font-size:24px;
+      color:#88746b;
+      margin-top: 30px;
+    }
+        
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:30px;
+    }
+    
+    .new_grid{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap:30px;
+    }
+    
+    .grid > div{
+      background-color: #D4ACA3;
+      height: 600px;
+      background-size:cover;
+      background-position:center;
+      display:flex;      
+      align-items: baseline;
+    }
+    
+    .new_grid > div{
+      background-color: #D4ACA3;
+      height: 300px;
+      background-size:cover;
+      background-position:center;
+      display:flex;      
+      align-items: baseline;
+    }
+    
+    .grid > div:nth-of-type(1){ background-image:url('swaddle.jpg'); }
+    .grid > div:nth-of-type(2){ background-image:url('bedding.jpg'); }    
+    .grid > div:nth-of-type(3){ background-image:url('towels.jpg'); }
+    
+    .grid > div .text{
+      box-sizing:border-box;
+      width:100%;
+      text-align:center;
+      padding:20px; 
+      font-size:24px;
+      background:#D4ACA3;
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      height: 70px;
+      transition:height 0.6s;
+      flex-direction:column;
+    }
+    
+    .grid > div:hover .text{
+      height:100%; 
+    }
+    
+    .description{
+      height:0;
+      opacity:0; 
+      transition:opacity 1s, height 0.4s, padding 0.4s;
+      font-size:18px;
+      padding-top:0;
+    }
+    
+    .grid > div:hover .text .description{
+      opacity:1;
+      height: 50%;
+      padding-top:20px;
+    }
+    
+    /* products */
+    
+    .new_grid > div:nth-of-type(1){ background-image:url('fabric.jpg'); }
+    .new_grid > div:nth-of-type(2){ background-image:url('blanket.jpg'); }
+    
+    footer{
+      margin-top:60px;
+      width:100%;
+      background:#88746b;
+    }
+    
+    .footer_grid{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:30px;
+      color:white;
+      margin: auto;
+      text-align: center;
+    }
+    
+    .footer_grid ul{
+      font-size: 18px;
+      text-align: left;
+    }
+    
+    .footer_grid ul li{
+      padding: 0 0 10px;
+    }
+    
+    .footer_grid > div:not(:nth-of-type(2)){
+      padding: 30px 60px; 
+    }
+    
+    .footer_grid > div:nth-of-type(2){
+      padding: 30px 0; 
+    }
+    
+    .social{
+      margin-top: 30px;
+      font-size: 24px;
+      display: flex;
+      justify-content: space-evenly; 
+    }
+    
+    button{
+      background: #D4ACA3;
+      border: none;
+      color: white;
+      font-family: 'Comfortaa';
+      padding: 10px 20px;
+      margin-left: auto;
+    }
+    
+    @media screen and (max-width:1024px){
+      .grid, .new_grid, .footer_grid{
+          max-width:100%;
+          grid-template-columns:1fr;
+      }
+    }
+            
+  </style>
+  
+  <body>
+    <header>
+      <div class="top_banner">
+        <ul>
+          <li style="padding: 0;"><input type="text" placeholder="search..."/></li>
+          <li><i class="icon-basket"></i> cart (0)</li>
+          <li>checkout</li>
+        </ul>
+      </div>
+      <div class="logo">
+        <div>
+          <img src="bandhan_logo.png" />
+          <span>bandhan</span>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li>home</li>
+          <li>our story</li>
+          <li>shop</li>
+          <li>contact</li>
+        </ul>
+      </nav>
+      <div class="hero"></div>            
+    </header>
+    <div class="content">
+      <div class="divider">
+        our range
+      </div>
+      <div class="grid">
+        <div>
+          <div class="text">
+            cotton swaddles
+            <div class="description">
+              our collection of 100% cotton swaddles in a range of beautiful hand-printed designs
+              <h2 style="margin-top:30px">shop now</h2>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="text">
+            cotton bedding
+            <div class="description">
+              100% cotton bedding options including cot and basinet sheets
+              <h2 style="margin-top:30px">shop now</h2>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="text">
+            cotton accessories
+            <div class="description">
+              a range of 100% cotton accessories such as face cloths and burp cloths
+              <h2 style="margin-top:30px">shop now</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider">
+        new products
+      </div>
+      <div class="new_grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_grid">
+        <div>
+          <h2>site information</h2>
+          <ul>
+            <li>home</li>
+            <li>our story</li>
+            <li>shop</li>
+            <li>contact</li>
+            <li>cart</li>
+            <li>checkout</li>
+            <li>shipping info</li>
+            <li>privacy policy</li>
+          </ul>
+        </div>
+        <div>
+          <h2>sign up for special offers!</h2>
+          <div style-"display:flex">
+            <input type="text" placeholder="email..." />
+            <button>sign up</button>
+          </div>
+          <h2 style="margin-top:30px">get in touch</h2>
+          <div class="social">
+            <a href="https://www.instagram.com/bandhan_nz" target="_blank"><i class="icon-instagram"></i></a>
+            <i class="icon-facebook"></i>
+            <i class="icon-email"></i>
+          </div>
+        </div>
+        <div>
+          <h2>something else</h2>
+          sdf sdf sdfsd fsdf sdf sdf sdf dsf s
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
