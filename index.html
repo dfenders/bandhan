@@ -232,6 +232,15 @@
       justify-content: space-evenly; 
     }
     
+    .button{
+      background: #D4ACA3;
+      border: none;
+      color: white;
+      font-family: 'Comfortaa';
+      padding: 10px 20px;
+      margin-left: auto;
+    }
+    
     @media screen and (max-width:1024px){
       .grid, .new_grid, .footer_grid{
           max-width:100%;
@@ -330,7 +339,10 @@
         </div>
         <div>
           <h2>sign up for special offers!</h2>
-          <input type="text" placeholder="email..." />
+          <div style-"display:flex">
+            <input type="text" placeholder="email..." />
+            <button>sign up</button>
+          </div>
           <h2 style="margin-top:30px">get in touch</h2>
           <div class="social">
             <a href="https://www.instagram.com/bandhan_nz" target="_blank"><i class="icon-instagram"></i></a>
