@@ -16,9 +16,15 @@
         <ul>
           <li style="padding: 0;"><input type="text" placeholder="search..."/></li>
           <li><i class="icon-basket"></i> cart (0)</li>
-          <li>checkout</li>
+          <li class="checkout_btn">checkout</li>
         </ul>
       </div>
+      <script>
+        document.querySelector(".checkout_btn").addEventListener("click", e => {
+          document.querySelector(".shopify-buy__cart-toggle").click();
+        })        
+
+      </script>
       <div class="logo">
         <div>
           <img src="assets/img/logo.png" />
@@ -94,7 +100,7 @@
               }
             },
             "text": {
-              "button": "Add to cart"
+              "button": "add to cart"
             }
           },
           "productSet": {

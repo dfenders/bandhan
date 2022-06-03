@@ -72,6 +72,13 @@ body{
     padding:15px 5px; 
     font-size:18px;
   }
+
+  .checkout_btn{
+      cursor:pointer;
+  }
+  .checkout_btn:hover{
+    text-decoration:underline;
+  }
   
   .top_banner ul li{
     color:white; 
