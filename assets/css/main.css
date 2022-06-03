@@ -1,0 +1,262 @@
+body{
+    margin:0;      
+    font-family:'Comfortaa', sans-serif;
+  }
+  
+  a{
+    text-decoration:none;
+    color:white;
+  }
+  
+  h2{
+    font-size:24px;
+    font-weight:300;
+  }
+  
+  header{
+    background:#D4ACA3;
+    min-height:20px;
+    width:100%;
+  }
+  
+  header > * > *, .grid, .new_grid, .footer_grid{
+    max-width: 70%; 
+    margin: auto;
+  }
+  
+  input[type="text"]{
+    border:none;
+    padding:10px;
+    width:300px;
+    font-family: 'Comfortaa';
+  }
+  
+  .hero{
+    height:60vh;
+    background-image:url('baby.jpg');
+    background-size:cover;
+    background-position:center;
+  }
+  
+  .logo{
+    background:white; 
+  }
+  
+  .logo > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:200px;
+    overflow:hidden;
+  }
+  
+  .logo img{
+    height:250px; 
+  }
+  
+  .logo span{
+    font-size: 100px;
+    font-weight: 300;
+    color: #D4ACA3; 
+  }
+  
+  header ul{
+    padding: 0;
+    list-style:none;
+    display:flex;
+    align-items:center;
+    gap:20px;
+  }
+  
+  header ul li{
+    padding:15px 5px; 
+    font-size:18px;
+  }
+  
+  .top_banner ul li{
+    color:white; 
+  }
+  
+  .top_banner ul li:nth-of-type(2){
+    margin-left:auto; 
+  }
+  
+  nav{
+     background:white; 
+  }
+  
+  nav ul{          
+    color:#88746b;      
+    justify-content:center;
+    padding-bottom:20px;
+    gap: 30px;      
+  }        
+  
+  nav ul li{
+    font-size:24px!important;
+  }
+  
+  .divider{
+    padding:30px;
+    text-align:center;
+    font-size:24px;
+    color:#88746b;
+    margin-top: 30px;
+  }
+      
+  .grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:30px;
+  }
+  
+  .new_grid{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:30px;
+  }
+  
+  .grid > div{
+    background-color: #D4ACA3;
+    height: 600px;
+    background-size:cover;
+    background-position:center;
+    display:flex;      
+    align-items: baseline;
+  }
+  
+  .new_grid > div{
+    height:600px; 
+  }
+  
+  .new_grid .img{
+    background-color: #D4ACA3;
+    height: 50%;
+    background-size:cover;
+    background-position:center;
+    display:flex;      
+    align-items: baseline;
+    margin-bottom:20px;
+  }
+  
+  .new_grid .desc{      
+    background: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grid > div:nth-of-type(1){ background-image:url('swaddle_pile.jpg'); }
+  .grid > div:nth-of-type(2){ background-image:url('bedding.jpg'); }    
+  .grid > div:nth-of-type(3){ background-image:url('headband.jpg'); }
+  
+  .grid > div .text{
+    box-sizing:border-box;
+    width:100%;
+    text-align:center;
+    padding:20px; 
+    font-size:24px;
+    background:#D4ACA3;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height: 70px;
+    transition:height 0.6s;
+    flex-direction:column;
+  }
+  
+  .grid > div:hover .text{
+    height:100%; 
+  }
+  
+  .description{
+    height:0;
+    opacity:0; 
+    transition:opacity 1s, height 0.4s, padding 0.4s;
+    font-size:18px;
+    padding-top:0;
+  }
+  
+  .grid > div:hover .text .description{
+    opacity:1;
+    height: 50%;
+    padding-top:20px;
+  }
+  
+  /* products */
+  
+  .new_grid div:nth-of-type(1) .img{ background-image:url('../img/product_wrap_elephants_1.jpg'); }
+  /*.new_grid div:nth-of-type(1):hover .img{ background-image:url('singlecars.JPG'); }*/
+  
+  .new_grid div:nth-of-type(2) .img{ background-image:url('swaddlebundle.JPG'); }
+  .new_grid div:nth-of-type(3) .img{ background-image:url('3cloths.JPG'); }
+  .new_grid div:nth-of-type(4) .img{ background-image:url('headbands.JPG'); }
+  .new_grid div:nth-of-type(7) .img{ background-image:url('classicgreen.JPG'); }
+  
+  footer{
+    margin-top:60px;
+    width:100%;
+    background:#88746b;
+  }
+  
+  .footer_grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+    color:white;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .footer_grid ul{
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .footer_grid ul li{
+    padding: 0 0 10px;
+  }
+  
+  .footer_grid > div:not(:nth-of-type(2)){
+    padding: 30px 60px; 
+  }
+  
+  .footer_grid > div:nth-of-type(2){
+    padding: 30px 0; 
+  }
+  
+  .social{
+    margin-top: 30px;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-evenly; 
+  }
+  
+  button{
+    background: #D4ACA3;
+    border: none;
+    color: white;
+    font-family: 'Comfortaa';
+    padding: 10px 20px;
+    margin-left: auto;
+  }
+  
+  span.price {
+    padding-top: 5px;
+    padding-bottom: 30px;
+    display: block;
+    color: #88746b;
+  }
+  
+  @media screen and (max-width:1440px){
+    .grid, .new_grid, .footer_grid{
+        max-width:85%;
+    }
+  }
+  
+  @media screen and (max-width:1024px){
+    .grid, .new_grid, .footer_grid{
+        max-width:100%;
+        grid-template-columns:1fr;
+    }
+  }
