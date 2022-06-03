@@ -7,245 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="css/fontello.css" rel="stylesheet">
     <link href="css/fontello-codes.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
   </head>
-  
-  <style>
-    
-    body{
-      margin:0;      
-      font-family:'Comfortaa', sans-serif;
-    }
-    
-    a{
-      text-decoration:none;
-      color:white;
-    }
-    
-    h2{
-      font-size:24px;
-      font-weight:300;
-    }
-    
-    header{
-      background:#D4ACA3;
-      min-height:20px;
-      width:100%;
-    }
-    
-    header > * > *, .grid, .new_grid, .footer_grid{
-      max-width: 70%; 
-      margin: auto;
-    }
-    
-    input[type="text"]{
-      border:none;
-      padding:10px;
-      width:300px;
-      font-family: 'Comfortaa';
-    }
-    
-    .hero{
-      height:60vh;
-      background-image:url('bandhan_banner.jpg');
-      background-size:cover;
-      background-position:center;
-    }
-    
-    .logo{
-      background:white; 
-    }
-    
-    .logo > div{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height:200px;
-      overflow:hidden;
-    }
-    
-    .logo img{
-      height:250px; 
-    }
-    
-    .logo span{
-      font-size: 100px;
-      font-weight: 300;
-      color: #D4ACA3; 
-    }
-    
-    header ul{
-      padding: 0;
-      list-style:none;
-      display:flex;
-      align-items:center;
-      gap:20px;
-    }
-    
-    header ul li{
-      padding:15px 5px; 
-      font-size:18px;
-    }
-    
-    .top_banner ul li{
-      color:white; 
-    }
-    
-    .top_banner ul li:nth-of-type(2){
-      margin-left:auto; 
-    }
-    
-    nav{
-       background:white; 
-    }
-    
-    nav ul{          
-      color:#88746b;      
-      justify-content:center;
-      padding-bottom:20px;
-      gap: 30px;      
-    }        
-    
-    nav ul li{
-      font-size:24px!important;
-    }
-    
-    .divider{
-      padding:30px;
-      text-align:center;
-      font-size:24px;
-      color:#88746b;
-      margin-top: 30px;
-    }
-        
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:30px;
-    }
-    
-    .new_grid{
-      display:grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap:30px;
-    }
-    
-    .grid > div{
-      background-color: #D4ACA3;
-      height: 600px;
-      background-size:cover;
-      background-position:center;
-      display:flex;      
-      align-items: baseline;
-    }
-    
-    .new_grid > div{
-      background-color: #D4ACA3;
-      height: 300px;
-      background-size:cover;
-      background-position:center;
-      display:flex;      
-      align-items: baseline;
-    }
-    
-    .grid > div:nth-of-type(1){ background-image:url('swaddle.jpg'); }
-    .grid > div:nth-of-type(2){ background-image:url('bedding.jpg'); }    
-    .grid > div:nth-of-type(3){ background-image:url('towels.jpg'); }
-    
-    .grid > div .text{
-      box-sizing:border-box;
-      width:100%;
-      text-align:center;
-      padding:20px; 
-      font-size:24px;
-      background:#D4ACA3;
-      color:white;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      height: 70px;
-      transition:height 0.6s;
-      flex-direction:column;
-    }
-    
-    .grid > div:hover .text{
-      height:100%; 
-    }
-    
-    .description{
-      height:0;
-      opacity:0; 
-      transition:opacity 1s, height 0.4s, padding 0.4s;
-      font-size:18px;
-      padding-top:0;
-    }
-    
-    .grid > div:hover .text .description{
-      opacity:1;
-      height: 50%;
-      padding-top:20px;
-    }
-    
-    /* products */
-    
-    .new_grid > div:nth-of-type(1){ background-image:url('fabric.jpg'); }
-    .new_grid > div:nth-of-type(2){ background-image:url('blanket.jpg'); }
-    
-    footer{
-      margin-top:60px;
-      width:100%;
-      background:#88746b;
-    }
-    
-    .footer_grid{
-      display:grid;
-      grid-template-columns:repeat(3, 1fr);
-      gap:30px;
-      color:white;
-      margin: auto;
-      text-align: center;
-    }
-    
-    .footer_grid ul{
-      font-size: 18px;
-      text-align: left;
-    }
-    
-    .footer_grid ul li{
-      padding: 0 0 10px;
-    }
-    
-    .footer_grid > div:not(:nth-of-type(2)){
-      padding: 30px 60px; 
-    }
-    
-    .footer_grid > div:nth-of-type(2){
-      padding: 30px 0; 
-    }
-    
-    .social{
-      margin-top: 30px;
-      font-size: 24px;
-      display: flex;
-      justify-content: space-evenly; 
-    }
-    
-    button{
-      background: #D4ACA3;
-      border: none;
-      color: white;
-      font-family: 'Comfortaa';
-      padding: 10px 20px;
-      margin-left: auto;
-    }
-    
-    @media screen and (max-width:1024px){
-      .grid, .new_grid, .footer_grid{
-          max-width:100%;
-          grid-template-columns:1fr;
-      }
-    }
-            
-  </style>
   
   <body>
     <header>
@@ -258,7 +21,7 @@
       </div>
       <div class="logo">
         <div>
-          <img src="bandhan_logo.png" />
+          <img src="assets/img/logo.png" />
           <span>bandhan</span>
         </div>
       </div>
@@ -272,53 +35,150 @@
       </nav>
       <div class="hero"></div>            
     </header>
-    <div class="content">
+    <div class="content">      
+      
       <div class="divider">
-        our range
-      </div>
-      <div class="grid">
-        <div>
-          <div class="text">
-            cotton swaddles
-            <div class="description">
-              our collection of 100% cotton swaddles in a range of beautiful hand-printed designs
-              <h2 style="margin-top:30px">shop now</h2>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="text">
-            cotton bedding
-            <div class="description">
-              100% cotton bedding options including cot and basinet sheets
-              <h2 style="margin-top:30px">shop now</h2>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="text">
-            cotton accessories
-            <div class="description">
-              a range of 100% cotton accessories such as face cloths and burp cloths
-              <h2 style="margin-top:30px">shop now</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="divider">
-        new products
+        all products
       </div>
       <div class="new_grid">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div id='collection-component-1654228278643'></div>
+        <script type="text/javascript">
+        /*<![CDATA[*/
+        (function () {
+          var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+          if (window.ShopifyBuy) {
+            if (window.ShopifyBuy.UI) {
+              ShopifyBuyInit();
+            } else {
+              loadScript();
+            }
+          } else {
+            loadScript();
+          }
+          function loadScript() {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = scriptURL;
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+            script.onload = ShopifyBuyInit;
+          }
+          function ShopifyBuyInit() {
+            var client = ShopifyBuy.buildClient({
+              domain: 'bandhan-434c.myshopify.com',
+              storefrontAccessToken: '54003e4d70bff0658062f3c8df074568',
+            });
+            ShopifyBuy.UI.onReady(client).then(function (ui) {
+              ui.createComponent('collection', {
+                id: '267020238899',
+                node: document.getElementById('collection-component-1654228278643'),
+                moneyFormat: '%24%7B%7Bamount%7D%7D',
+                options: {
+          "product": {
+            "styles": {
+              "product": {
+                "@media (min-width: 601px)": {
+                  "max-width": "calc(33.33333% - 30px)",
+                  "margin-left": "30px",
+                  "margin-bottom": "50px",
+                  "width": "calc(33.33333% - 30px)"
+                }
+              },
+              "button": {
+                ":hover": {
+                  "background-color": "#bf9b93"
+                },
+                "background-color": "#d4aca3",
+                ":focus": {
+                  "background-color": "#bf9b93"
+                }
+              }
+            },
+            "text": {
+              "button": "Add to cart"
+            }
+          },
+          "productSet": {
+            "styles": {
+              "products": {
+                "@media (min-width: 601px)": {
+                  "margin-left": "-30px"
+                }
+              }
+            }
+          },
+          "modalProduct": {
+            "contents": {
+              "img": false,
+              "imgWithCarousel": true,
+              "button": false,
+              "buttonWithQuantity": true
+            },
+            "styles": {
+              "product": {
+                "@media (min-width: 601px)": {
+                  "max-width": "100%",
+                  "margin-left": "0px",
+                  "margin-bottom": "0px"
+                }
+              },
+              "button": {
+                ":hover": {
+                  "background-color": "#bf9b93"
+                },
+                "background-color": "#d4aca3",
+                ":focus": {
+                  "background-color": "#bf9b93"
+                }
+              }
+            },
+            "text": {
+              "button": "add to cart"
+            }
+          },
+          "option": {},
+          "cart": {
+            "styles": {
+              "button": {
+                ":hover": {
+                  "background-color": "#bf9b93"
+                },
+                "background-color": "#d4aca3",
+                ":focus": {
+                  "background-color": "#bf9b93"
+                }
+              }
+            },
+            "text": {
+              "total": "Subtotal",
+              "button": "checkout"
+            },
+            "contents": {
+              "note": true
+            }
+          },
+          "toggle": {
+            "styles": {
+              "toggle": {
+                "background-color": "#d4aca3",
+                ":hover": {
+                  "background-color": "#bf9b93"
+                },
+                ":focus": {
+                  "background-color": "#bf9b93"
+                }
+              }
+            }
+          }
+        },
+              });
+            });
+          }
+        })();
+        /*]]>*/
+        </script>
       </div>
     </div>
+
     <footer>
       <div class="footer_grid">
         <div>
@@ -336,7 +196,7 @@
         </div>
         <div>
           <h2>sign up for special offers!</h2>
-          <div style-"display:flex">
+          <div style="display:flex">
             <input type="text" placeholder="email..." />
             <button>sign up</button>
           </div>
@@ -344,7 +204,7 @@
           <div class="social">
             <a href="https://www.instagram.com/bandhan_nz" target="_blank"><i class="icon-instagram"></i></a>
             <i class="icon-facebook"></i>
-            <i class="icon-email"></i>
+            <a href="mailto:info@bandhan.co.nz"><i class="icon-email"></i></a>
           </div>
         </div>
         <div>
