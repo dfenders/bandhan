@@ -85,15 +85,20 @@ body{
      background:white; 
   }
   
-  nav ul{          
-    color:#88746b;      
+  nav ul{                   
     justify-content:center;
     padding-bottom:20px;
     gap: 30px;      
   }        
   
   nav ul li{
+    opacity:0.7;
+    color:#88746b; 
     font-size:24px!important;
+  }
+
+  nav ul li.active{
+    opacity:1;
   }
   
   .divider{
