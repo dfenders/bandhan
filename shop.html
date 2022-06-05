@@ -68,7 +68,8 @@
               storefrontAccessToken: '54003e4d70bff0658062f3c8df074568',
             });
             ShopifyBuy.UI.onReady(client).then(function (ui) {
-              console.log(ui);
+              var iframe = document.querySelector('iframe[id="TheID"]');
+console.log(iframe);
               ui.createComponent('collection', {
                 id: '267020238899',
                 node: document.getElementById('collection-component-1654228278643'),
