@@ -19,9 +19,9 @@ body{
     width:100%;
   }
   
-  header > * > *, .grid, .new_grid, .footer_grid{
+  header > * > *, .content, .footer_grid{
     max-width: 70%; 
-    margin: auto;
+    margin: auto; 
   }
   
   input[type="text"]{
