@@ -109,11 +109,15 @@ body{
   }
   
   .divider{
-    padding:30px;
+    padding:30px 0;
     text-align:center;
     font-size:24px;
     color:#88746b;
     margin-top: 30px;
+  }
+
+  .divider.left{
+     text-align:left;     
   }
       
   .grid{
