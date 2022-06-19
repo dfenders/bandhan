@@ -23,6 +23,10 @@ body{
     max-width: 70%; 
     margin: auto; 
   }
+
+  .top_banner{
+      padding: 10px;
+  }
   
   input[type="text"]{
     border:none;
