@@ -123,6 +123,10 @@ body{
   .divider.left{
      text-align:left;     
   }
+
+.divider.right{
+     text-align:right;     
+  }
       
   .grid{
     display:grid;
