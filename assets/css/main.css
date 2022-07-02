@@ -184,6 +184,7 @@ body{
 
   .new_grid > div div:not(.img){
     padding-top: 30px;
+      text-align:center;
   }
   
   .description{
