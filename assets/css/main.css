@@ -59,6 +59,8 @@ body{
     height:200px;
     overflow:hidden;
       font-size: 60px;
+      font-weight: 300;
+      color:#88746b;
   }
   
   .logo img{
