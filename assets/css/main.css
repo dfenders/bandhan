@@ -195,7 +195,7 @@ body{
     background-image:url('../');    
   }*/
 
-  .new_grid > div div:not(.img){
+  .new_grid > div div:not(.img), .new_grid > a div:not(.img){
     padding-top: 30px;
       text-align:center;
   }
