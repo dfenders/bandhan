@@ -166,6 +166,11 @@ body{
     height:100%; 
   }
 
+  .new_section{
+    height:60vh;
+      background:#D4ACA3;
+  }
+
   .new_grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);
