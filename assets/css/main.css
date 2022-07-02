@@ -21,7 +21,7 @@ body{
   
   .content, .footer_grid{
     justify-content: space-between;
-    padding: 0 120px;
+    padding: 0 60px;
   }
 
   .top_banner{
@@ -48,7 +48,7 @@ body{
     background:white; 
     display:flex;
     align-items:center;
-    padding: 0 120px;
+    padding: 0 60px;
     justify-content: space-between;
   }
   
@@ -58,6 +58,7 @@ body{
     justify-content: center;
     height:200px;
     overflow:hidden;
+      font-size: 60px;
   }
   
   .logo img{
@@ -79,8 +80,8 @@ body{
   }
   
   header ul li{
-    padding:15px 5px; 
-    font-size:18px;
+   /* padding:15px 5px; 
+    font-size:18px;*/
   }
 
   .checkout_btn{
@@ -96,7 +97,8 @@ body{
   
   nav ul{                   
     justify-content:center;
-    gap: 30px;      
+    gap: 30px; 
+      margin: 0;
   }        
   
   nav ul li{
