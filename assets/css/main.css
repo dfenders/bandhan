@@ -38,7 +38,7 @@ body{
   }
   
   .hero{
-    height:60vh;
+    height:80vh;
     background-image:url('../img/baby.jpg');
     background-size:cover;
     background-position:center;
