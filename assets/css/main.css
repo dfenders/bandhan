@@ -165,10 +165,21 @@ body{
     height:100%; 
   }
 
-.new_grid{
- display:grid;
+  .new_grid{
+    display:grid;
     grid-template-columns:repeat(4,1fr);
-}
+  }
+
+  .new_grid .img{
+    background-size:cover;
+    background-position:center;    
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+
+  .new_grid .img:nth-of-type(1){
+    background-image:url('../img/IMG_9497.jpg');    
+  }
   
   .description{
     height:0;
