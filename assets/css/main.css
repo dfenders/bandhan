@@ -164,10 +164,7 @@ body{
     font-size:48px;
     color:white;
   }
-  
-  .grid > div:hover .text{
-    height:100%; 
-  }
+ 
 
   .new_section{
     height:60vh;
