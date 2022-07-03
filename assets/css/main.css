@@ -210,6 +210,7 @@ body{
       padding:30px 30px 60px;
       font-size:18px;
       line-height:1.5;
+      width:80ch;
   }
   
   .grid > div:hover .text .description{
