@@ -159,8 +159,7 @@ body{
   
   
   .grid > div:nth-of-type(1){ background-image:url('../img/IMG_9320.jpg'); }
-  .grid > div:nth-of-type(2){ background-image:url('bedding.jpg'); }    
-  .grid > div:nth-of-type(3){ background-image:url('../img/headband.jpg'); }
+  .grid > div:nth-of-type(2){ background-image:url('../img/washcloth_set.jpg'); }    
   
   .grid > div .text{
     box-sizing:border-box;
