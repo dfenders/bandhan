@@ -207,6 +207,9 @@ body{
   
   .description{
     text-align:left!important;
+      padding:30px 30px 60px;
+      font-size:18px;
+      line-height:1.5;
   }
   
   .grid > div:hover .text .description{
