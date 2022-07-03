@@ -18,6 +18,11 @@ body{
     min-height:20px;
     width:100%;
   }
+
+  .breadcrumb{
+    padding: 0 60px 30px;
+    color: #88746b;
+  }
   
   .footer_grid{
     justify-content: space-between;
