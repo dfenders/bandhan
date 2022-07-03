@@ -200,6 +200,13 @@ body{
     background-image:url('../');    
   }*/
 
+  .product_price{
+    display: block;
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 20px;   
+  }
+
   .new_grid > div div:not(.img), .new_grid > a div:not(.img){
     padding-top: 30px;
       text-align:center;
