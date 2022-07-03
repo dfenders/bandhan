@@ -206,11 +206,7 @@ body{
   }
   
   .description{
-    height:0;
-    opacity:0; 
-    transition:opacity 1s, height 0.4s, padding 0.4s;
-    font-size:18px;
-    padding-top:0;
+    text-align:left!important;
   }
   
   .grid > div:hover .text .description{
