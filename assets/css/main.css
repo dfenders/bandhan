@@ -290,13 +290,17 @@ body{
   
   @media screen and (max-width:1440px){
     .grid, .new_grid, .footer_grid{
-        max-width:85%;
+        grid-template-columns:1fr 1fr;
     }
   }
   
   @media screen and (max-width:1024px){
     .grid, .new_grid, .footer_grid{
-        max-width:100%;
+        /*max-width:100%;*/
         grid-template-columns:1fr;
     }
+      
+      nav {
+       display:none;   
+      }
   }
