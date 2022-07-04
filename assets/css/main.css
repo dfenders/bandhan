@@ -38,8 +38,12 @@ body{
   input[type="email"]{
     border:none;
     padding:10px;
-    width:300px;
+    width:100%;
     font-family: 'Comfortaa';
+  }
+
+  input[type="email"] + button{
+    white-space: nowrap;     
   }
   
   .hero{
