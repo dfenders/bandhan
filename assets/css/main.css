@@ -292,6 +292,10 @@ body{
     .grid, .new_grid, .footer_grid{
         grid-template-columns:1fr 1fr;
     }
+      
+      .top_banner{
+       font-size: 14px;   
+      }
   }
   
   @media screen and (max-width:1024px){
@@ -302,5 +306,18 @@ body{
       
       nav {
        display:none;   
+      }
+      
+      .top_banner{
+          font-size: 14px;
+      }
+      
+      .logo{
+          justify-content: center;
+      }
+      
+      .new_grid .img{
+       height: 250px;
+          aspect-ratio:auto;
       }
   }
