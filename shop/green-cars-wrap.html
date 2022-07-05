@@ -203,9 +203,8 @@ approx. 120cm x 120cm
         <div>
           <h2>site information</h2>
           <ul>
-            <li>home</li>
-            <li>our story</li>
-            <li>shop</li>
+            <li><a href="/">home</a></li>
+            <li><a href="/shop">shop</a></li>
             <li>contact</li>
             <li>shipping info</li>
             <li>privacy policy</li>
@@ -214,21 +213,44 @@ approx. 120cm x 120cm
         <div>
           <h2>sign up for special offers!</h2>
           <div style="display:flex">
-            <input type="text" placeholder="email..." />
-            <button>sign up</button>
-          </div>
-          <h2 style="margin-top:30px">get in touch</h2>
+            <input id="signup_email" type="email" placeholder="email..." />
+            <button id="signup_button">sign up</button>
+          </div>                    
+        </div>
+        <div>
+          <h2>get in touch</h2>
           <div class="social">
             <a href="https://www.instagram.com/bandhan_nz" target="_blank"><i class="icon-instagram"></i></a>
             <i class="icon-facebook"></i>
             <a href="mailto:info@bandhan.co.nz"><i class="icon-email"></i></a>
           </div>
         </div>
-        <div>
-          <h2>something else</h2>
-          sdf sdf sdfsd fsdf sdf sdf sdf dsf s
-        </div>
       </div>
     </footer>
+    
+    <!-- email submission -->
+    <script>
+      document.querySelector("#signup_button").addEventListener("click", _ => {
+        let email = document.querySelector("#signup_email").value;
+        
+        if(email !== "")
+        {
+          let url = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfVyn_Vs9_-9c4ch85ek9LeuNa2hj-PDfYEmZtJNyInZWV62Q/formResponse"
+          let formBody = `entry.834244758=${email}`
+
+          fetch(url, {
+            'method':'post',
+            'mode': 'no-cors',
+            'headers': {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            'body' : formBody
+          }).then(res => {
+            console.log("do something");
+          });
+        }
+    });
+
+    </script>
   </body>
 </html>
