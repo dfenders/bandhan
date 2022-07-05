@@ -321,4 +321,8 @@ body{
        height: 250px;
           aspect-ratio:auto;
       }
+      
+      .new_grid > a div:not(.img){
+       font-size: 36px;   
+      }
   }
