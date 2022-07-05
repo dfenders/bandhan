@@ -232,8 +232,8 @@
         <div>
           <h2>sign up for special offers!</h2>
           <div style="display:flex">
-            <input type="email" placeholder="email..." />
-            <button>sign up</button>
+            <input id="signup_email" type="email" placeholder="email..." />
+            <button id="signup_button">sign up</button>
           </div>
           <h2 style="margin-top:30px">get in touch</h2>
           <div class="social">
@@ -248,5 +248,30 @@
         </div>
       </div>
     </footer>
+    
+    <!-- email submission -->
+    <script>
+      document.querySelector("#signup_button").addEventListener("click", _ => {
+        let email = document.querySelector("#signup_email").value;
+        
+        if(email !== "")
+        {
+          let url = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfVyn_Vs9_-9c4ch85ek9LeuNa2hj-PDfYEmZtJNyInZWV62Q/formResponse"
+          let formBody = `entry.834244758=${email}`
+
+          fetch(url, {
+            'method':'post',
+            'mode': 'no-cors',
+            'headers': {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            'body' : formBody
+          }).then(res => {
+            console.log("do something");
+          });
+        });
+      }
+
+    </script>
   </body>
 </html>
