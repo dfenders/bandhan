@@ -52,7 +52,7 @@
           let imgLarge = new Image();
           imgLarge.src = "assets/img/IMG_9320.jpg"; 
           imgLarge.onload = function () {
-            document.querySelector("#wraps_small").replaceWith(imgLarge);
+            document.querySelector("#wraps_small").src = imgLarge.src;
           };          
         </script>
         <!--<div>
