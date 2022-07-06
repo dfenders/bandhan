@@ -346,7 +346,7 @@ body{
       
       .new_grid .img{
        height: 250px;
-          aspect-ratio:auto;
+          aspect-ratio: 3/1!important;
       }
       
       .new_grid > a div:not(.img){
