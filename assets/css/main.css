@@ -343,8 +343,7 @@ body{
           justify-content: center;
       }
       
-      .new_grid .img{
-       height: 250px;
+      .new_grid img{
           aspect-ratio: 3/1!important;
       }
       
