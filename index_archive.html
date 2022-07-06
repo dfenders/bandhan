@@ -65,8 +65,8 @@ our cotton cloth is made from recycled saris and then hand block-printed in jaip
     -- senorita john-moskal, bandhan</div>
       </div>
       <div class="new_grid">        
-        <a href="shop/yellow-elephant-wrap">
-          <div class="img" style="background-image:url('assets/img/IMG_9497.jpg');"></div>
+        <a href="shop/yellow-elephant-wrap">          
+          <img id="yellow_elephants_small_product" src="assets/img/yellow_elephants_small.png" style="width: 100%;object-fit: cover;aspect-ratio: 1/1;">
           <div>yellow elephants cotton wrap<br><span class="price">$24.95</span></div>
         </a>
         <a href="shop/essentials-bundle">
@@ -106,6 +106,12 @@ our cotton cloth is made from recycled saris and then hand block-printed in jaip
           imgLarge4.src = "assets/img/essentials.jpg"; 
           imgLarge4.onload = function () {
             document.querySelector("#essentials_small_product").src = imgLarge4.src;
+          };
+          
+          let imgLarge5 = new Image();
+          imgLarge5.src = "assets/img/IMG_9497.jpg"; 
+          imgLarge5.onload = function () {
+            document.querySelector("#yellow_elephants_small_product").src = imgLarge5.src;
           };
         </script>
 
