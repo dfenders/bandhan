@@ -335,6 +335,15 @@ body{
       
       #product_page div:last-of-type{
        order: -1;   
+          text-align:center;
+      }
+      
+      #product_page div:last-of-type h2{
+       padding-left:0!important;   
+      }
+      
+      #product_page .description{
+       text-align:center!important;   
       }
       
       .empty{
