@@ -14,7 +14,6 @@ body{
   }
   
   header{
-    background:#D4ACA3;
     min-height:20px;
     width:100%;
   }
@@ -30,6 +29,7 @@ body{
   }
 
   .top_banner{
+      background:#D4ACA3;
       padding: 15px;
       color:white;
       text-align:center;
