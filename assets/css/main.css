@@ -144,21 +144,17 @@ body{
     gap:30px;
       padding: 0 60px;
   }
-
-  .grid a{
-   /* height:100%;*/
-    width:100%;
-      display:flex;
-      align-items:center;
-   }
   
   .grid > a{
     background-color: #D4ACA3;
     height: 600px;
     background-size:cover;
     background-position:center;
-    /*display:flex;      
-    align-items: baseline;*/
+    position: relative;
+    overflow: hidden;
+    width:100%;
+    display:flex;
+    align-items:center;
   }
   
   
