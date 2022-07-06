@@ -146,26 +146,26 @@ body{
   }
 
   .grid a{
-    height:100%;
+   /* height:100%;*/
     width:100%;
       display:flex;
       align-items:center;
    }
   
-  .grid > div{
+  .grid > a{
     background-color: #D4ACA3;
     height: 600px;
     background-size:cover;
     background-position:center;
-    display:flex;      
-    align-items: baseline;
+    /*display:flex;      
+    align-items: baseline;*/
   }
   
   
-  .grid > div:nth-of-type(1){ background-image:url('../img/IMG_9320.jpg'); }
-  .grid > div:nth-of-type(2){ background-image:url('../img/washcloth_set.jpg'); }    
+  /*.grid > div:nth-of-type(1){ background-image:url('../img/IMG_9320.jpg'); }
+  .grid > div:nth-of-type(2){ background-image:url('../img/washcloth_set.jpg'); }    */
   
-  .grid > div .text{
+  .grid > a .text{
     box-sizing:border-box;
     width:100%;
     text-align:center;
