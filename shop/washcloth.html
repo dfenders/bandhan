@@ -37,10 +37,37 @@
 
       <div id="product_page" class="new_grid" style="grid-template-columns:1fr 2fr">
         <div>
+          <img id="washcloth_small_product" src="assets/img/washcloth_small.png" data-src="assets/img/washcloth_set.jpg"
+               style="width: 100%;object-fit: cover;aspect-ratio: 1/1;margin-bottom:30px" />
+          <!--<img src="../assets/img/cars_trucks_sun_small.png" data-src="../assets/img/IMG_9257.jpg"
+               style="width: 100%;object-fit: cover;aspect-ratio: 1/1;margin-bottom:30px" />-->
+        </div>
+        <script>
+          
+          const images = Array.from(document.querySelectorAll('.grid img, .new_grid img'));
+        
+          if ('IntersectionObserver' in window) {
+              const imageObserver = new IntersectionObserver((entries, observer) => {
+                  entries.forEach(entry => {
+                      if (entry.isIntersecting) {
+                          const image = entry.target;
+
+                          image.src = image.dataset.src;
+                          //image.onload = () => image.previousElementSibling.remove();
+
+                          imageObserver.unobserve(image);
+                      }
+                  });
+              });
+
+              images.forEach(img => imageObserver.observe(img));
+          }                             
+        </script>
+        <!--<div>
           <div class="img" style="background-image:url('../assets/img/washcloth_set.jpg');margin-bottom:30px"></div>
           <div class="img" style="background-image:url('../assets/img/washcloths.jpg');margin-bottom:30px"></div>
           <div class="img" style="background-image:url('../assets/img/a.jpg');margin-bottom:30px"></div>
-        </div>
+        </div>-->
         <div style="color:#88746b">
           <h2 style="font-weight:400;padding-left: 30px;">washcloth 3 pack
             <span class="product_price">$27.50</span></h2>
