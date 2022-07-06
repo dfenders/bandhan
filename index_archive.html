@@ -70,7 +70,7 @@ our cotton cloth is made from recycled saris and then hand block-printed in jaip
           <div>yellow elephants cotton wrap<br><span class="price">$24.95</span></div>
         </a>
         <a href="shop/essentials-bundle">
-          <div class="img" style="background-image:url('assets/img/essentials.jpg')"></div>
+          <img id="essentials_small_product" src="assets/img/essentials_small.png" style="width: 100%;object-fit: cover;aspect-ratio: 1/1;">
           <div>essentials bundle<br>(wrap + washcloth + headband)<br/><span class="price" style="padding-top:14px!important">$39.95</span></div>
         </a>
         <a href="shop/washcloth">
@@ -100,6 +100,12 @@ our cotton cloth is made from recycled saris and then hand block-printed in jaip
           imgLarge3.src = "assets/img/IMG_9606.jpg"; 
           imgLarge3.onload = function () {
             document.querySelector("#cars_and_trucks_small_product").src = imgLarge3.src;
+          };
+          
+          let imgLarge4 = new Image();
+          imgLarge4.src = "assets/img/essentials.jpg"; 
+          imgLarge4.onload = function () {
+            document.querySelector("#essentials_small_product").src = imgLarge4.src;
           };
         </script>
 
