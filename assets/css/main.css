@@ -333,6 +333,10 @@ body{
        grid-template-columns:1fr!important;   
       }
       
+      #product_page div:last-of-type{
+       order: -1;   
+      }
+      
       .empty{
         display:none;
       }
