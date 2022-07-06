@@ -46,21 +46,7 @@
           <div class="text">
             accessories
           </div>
-        </a>       
-        
-        <script>
-          let imgLarge = new Image();
-          imgLarge.src = "assets/img/IMG_9320.jpg"; 
-          imgLarge.onload = function () {
-            document.querySelector("#wraps_small").src = imgLarge.src;
-          };         
-          
-          let imgLarge2 = new Image();
-          imgLarge2.src = "assets/img/washcloth_set.jpg"; 
-          imgLarge2.onload = function () {
-            document.querySelector("#washcloth_small").src = imgLarge2.src;
-          };   
-        </script>
+        </a>                       
         <!--<div>
           <a href="shop">
           <div class="text">
@@ -88,13 +74,29 @@ our cotton cloth is made from recycled saris and then hand block-printed in jaip
           <div>essentials bundle<br>(wrap + washcloth + headband)<br/><span class="price" style="padding-top:14px!important">$39.95</span></div>
         </a>
         <a href="shop/washcloth">
-          <div class="img" style="background-image:url('assets/img/washcloth_set.jpg')"></div>
+          <img id="washcloth_small_product" src="assets/img/washcloth_small.png" style="width: 100%;">
           <div>washcloth 3 pack<br><span class="price">$27.50</span></div>
         </a>
         <a href="shop/cars-and-trucks-wrap">
           <div class="img" style="background-image:url('assets/img/IMG_9606.jpg');"></div>
           <div>cars and trucks cotton wrap<br><span class="price">$24.95</span></div>
         </a>
+        
+        <script>
+          let imgLarge = new Image();
+          imgLarge.src = "assets/img/IMG_9320.jpg"; 
+          imgLarge.onload = function () {
+            document.querySelector("#wraps_small").src = imgLarge.src;
+          };         
+          
+          let imgLarge2 = new Image();
+          imgLarge2.src = "assets/img/washcloth_set.jpg"; 
+          imgLarge2.onload = function () {
+            document.querySelector("#washcloth_small").src = imgLarge2.src;
+            document.querySelector("#washcloth_small_product").src = imgLarge2.src;
+          };   
+        </script>
+
         <!--<div>
           <div class="img"></div>
           <div>headband 2 pack (big + small)<br><span class="price">$14.50</span><u>go to shop</u><br><br><button style="margin-left:none">add to cart</button></div>
