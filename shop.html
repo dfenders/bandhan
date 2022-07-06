@@ -38,21 +38,25 @@
       </div>
       <div class="new_grid">
         <a href="shop/yellow-elephant-wrap">
-          <div class="img" style="background-image:url('assets/img/IMG_9497.jpg');"></div>
+          <img id="yellow_elephants_small_product" src="assets/img/yellow_elephants_small.png" data-src="assets/img/IMG_9497.jpg"
+               style="width: 100%;object-fit: cover;aspect-ratio: 1/1;">
           <div>yellow elephants cotton wrap<br><span class="price">$24.95</span></div>
         </a>
         <a href="shop/cars-and-trucks-wrap">
-          <div class="img" style="background-image:url('assets/img/IMG_9606.jpg');"></div>
+           <img id="cars_and_trucks_small_product" src="assets/img/feet_small.png" data-src="assets/img/IMG_9606.jpg"
+               style="width: 100%;object-fit: cover;aspect-ratio: 1/1;">
           <div>cars and trucks cotton wrap<br><span class="price">$24.95</span></div>
         </a>
         <a href="shop/green-cars-wrap">
-          <div class="img" style="background-image:url('assets/img/IMG_9320.jpg');"></div>
+           <img id="green_cars_small_product" src="assets/img/green_baby_small.png" data-src="assets/img/IMG_9320.jpg"
+               style="width: 100%;object-fit: cover;aspect-ratio: 1/1;">
           <div>green cars cotton wrap<br><span class="price">$24.95</span></div>
         </a>
         <div class="empty"></div>
         
         <a href="shop/washcloth">
-          <div class="img" style="background-image:url('assets/img/washcloth_set.jpg')"></div>
+          <img id="washcloth_small_product" src="assets/img/washcloth_small.png" data-src="assets/img/washcloth_set.jpg"
+               style="width: 100%;object-fit: cover;aspect-ratio: 1/1;">
           <div>cotton washcloth 3 pack<br><span class="price">$27.50</span></div>
         </a>
         <a href="shop/headband">
@@ -63,7 +67,8 @@
         <div class="empty"></div>
         
         <a href="shop/essentials-bundle">
-          <div class="img" style="background-image:url('assets/img/essentials.jpg')"></div>
+          <img id="essentials_small_product" src="assets/img/essentials_small.png" data-src="assets/img/essentials.jpg"
+               style="width: 100%;object-fit: cover;aspect-ratio: 1/1;">
           <div>essentials bundle<br>(wrap + washcloth + headband)<br/><span class="price" style="padding-top:14px!important">$39.95</span></div>
         </a>                
         <div>
@@ -73,6 +78,27 @@
       </div>
 
     </div>
+    <script>
+          
+          const images = Array.from(document.querySelectorAll('.grid img, .new_grid img'));
+        
+          if ('IntersectionObserver' in window) {
+              const imageObserver = new IntersectionObserver((entries, observer) => {
+                  entries.forEach(entry => {
+                      if (entry.isIntersecting) {
+                          const image = entry.target;
+
+                          image.src = image.dataset.src;
+                          //image.onload = () => image.previousElementSibling.remove();
+
+                          imageObserver.unobserve(image);
+                      }
+                  });
+              });
+
+              images.forEach(img => imageObserver.observe(img));
+          }                             
+        </script>
     <div id="product-component-1656905970862" style="display:none!important"></div>
 <script type="text/javascript">
 /*<![CDATA[*/
