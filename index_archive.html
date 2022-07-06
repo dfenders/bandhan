@@ -36,13 +36,13 @@
     <div class="content">
       <div class="grid">
         <a href="shop">
-          <img id="wraps_small" src="assets/img/test.png" style="width: 100%;">
+          <img id="wraps_small" src="assets/img/baby_small.png" style="width: 100%;">
           <div class="text">
             wraps
           </div>
         </a>
         <a href="shop">
-          <img src="assets/img/washcloth_set.jpg" style="width: 100%;">
+          <img id="washcloth_small" src="assets/img/washcloth_small.png" style="width: 100%;">
           <div class="text">
             accessories
           </div>
@@ -53,7 +53,13 @@
           imgLarge.src = "assets/img/IMG_9320.jpg"; 
           imgLarge.onload = function () {
             document.querySelector("#wraps_small").src = imgLarge.src;
-          };          
+          };         
+          
+          let imgLarge2 = new Image();
+          imgLarge2.src = "assets/img/washcloth_set.jpg"; 
+          imgLarge2.onload = function () {
+            document.querySelector("#washcloth_small").src = imgLarge2.src;
+          };   
         </script>
         <!--<div>
           <a href="shop">
