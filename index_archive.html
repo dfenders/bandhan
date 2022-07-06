@@ -36,7 +36,7 @@
     <div class="content">
       <div class="grid">
         <a href="shop">
-          <img src="assets/img/IMG_9320.jpg" style="width: 100%;">
+          <img id="wraps_small" src="assets/img/test.png" style="width: 100%;">
           <div class="text">
             wraps
           </div>
@@ -47,6 +47,14 @@
             accessories
           </div>
         </a>       
+        
+        <script>
+          let imgLarge = new Image();
+          imgLarge.src = "assets/img/IMG_9320.jpg"; 
+          imgLarge.onload = function () {
+            document.querySelector("#wraps_small").replaceWith(imgLarge);
+          };          
+        </script>
         <!--<div>
           <a href="shop">
           <div class="text">
