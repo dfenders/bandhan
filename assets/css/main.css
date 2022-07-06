@@ -346,6 +346,11 @@ body{
        text-align:center!important;   
       }
       
+      #product_page .description + div{
+       margin: auto!important;   
+       padding-left:0!important;
+      }
+      
       .empty{
         display:none;
       }
