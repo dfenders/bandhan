@@ -74,11 +74,11 @@ our cotton cloth is made from recycled saris and then hand block-printed in jaip
           <div>essentials bundle<br>(wrap + washcloth + headband)<br/><span class="price" style="padding-top:14px!important">$39.95</span></div>
         </a>
         <a href="shop/washcloth">
-          <img id="washcloth_small_product" src="assets/img/washcloth_small.png" style="width: 100%;">
+          <img id="washcloth_small_product" src="assets/img/washcloth_small.png" style="width: 100%;object-fit: cover;aspect-ratio: 1/1;">
           <div>washcloth 3 pack<br><span class="price">$27.50</span></div>
         </a>
         <a href="shop/cars-and-trucks-wrap">
-          <div class="img" style="background-image:url('assets/img/IMG_9606.jpg');"></div>
+          <img id="cars_and_trucks_small_product" src="assets/img/feet_small.png" style="width: 100%;object-fit: cover;aspect-ratio: 1/1;">
           <div>cars and trucks cotton wrap<br><span class="price">$24.95</span></div>
         </a>
         
@@ -95,6 +95,12 @@ our cotton cloth is made from recycled saris and then hand block-printed in jaip
             document.querySelector("#washcloth_small").src = imgLarge2.src;
             document.querySelector("#washcloth_small_product").src = imgLarge2.src;
           };   
+          
+          let imgLarge3 = new Image();
+          imgLarge3.src = "assets/img/IMG_9606.jpg"; 
+          imgLarge3.onload = function () {
+            document.querySelector("#cars_and_trucks_small_product").src = imgLarge3.src;
+          };
         </script>
 
         <!--<div>
