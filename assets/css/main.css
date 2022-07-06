@@ -352,6 +352,10 @@ body{
        font-size: 24px;  
       }
       
+      .grid > a{
+       height:300px;   
+      }
+      
       .grid > a .text {
         font-size: 8vw;
     }
