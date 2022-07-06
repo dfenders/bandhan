@@ -293,6 +293,10 @@ body{
     .top_banner{
       font-size: 14px;   
     }
+      
+      .new_grid img{
+          aspect-ratio: 2/1!important;
+      }
   }
   
   @media screen and (max-width:1024px){
