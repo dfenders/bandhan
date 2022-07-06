@@ -335,7 +335,7 @@ body{
       
       #product_page div:last-of-type{
        order: -1;   
-          text-align:center;
+       text-align:center;
       }
       
       #product_page div:last-of-type h2{
@@ -346,7 +346,7 @@ body{
        text-align:center!important;   
       }
       
-      #product_page .description + div{
+      #product_page .description + div, #product_page .description + div div{
        margin: auto!important;   
        padding-left:0!important;
       }
