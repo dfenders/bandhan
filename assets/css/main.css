@@ -354,4 +354,9 @@ body{
       .footer_grid > div:nth-of-type(3){
         padding:0 0 30px;   
       }
+      
+      .breadcrumb{
+        padding: 0 0 30px;
+        text-align: center;   
+      }
   }
