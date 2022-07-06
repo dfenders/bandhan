@@ -10,6 +10,10 @@
     <link href="assets/css/fontello-codes.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
 
+    <link rel="preload" as="image" href="assets/img/IMG_9320.jpg">
+    <link rel="preload" as="image" href="assets/img/IMG_9497.jpg">
+   
+    
     <link rel="preload" as="image" href="assets/img/essentials.jpg">
   </head>
   
@@ -37,13 +41,15 @@
     <div class="content">
       <div class="grid">
         <a href="shop">
-          <img id="wraps_small" src="assets/img/baby_small.png" style="width: 100%;object-fit: cover;height: 100%;">
+          <img id="wraps_small" src="assets/img/baby_small.png" data-src="assets/img/IMG_9320.jpg"
+               style="width: 100%;object-fit: cover;height: 100%;">
           <div class="text">
             wraps
           </div>
         </a>
         <a href="shop">
-          <img id="washcloth_small" src="assets/img/washcloth_small.png" style="width: 100%;object-fit: cover;height: 100%;">
+          <img id="washcloth_small" src="assets/img/washcloth_small.png" data-src="assets/img/washcloth_set.jpg"
+               style="width: 100%;object-fit: cover;height: 100%;">
           <div class="text">
             accessories
           </div>
@@ -89,7 +95,7 @@ our cotton cloth is made from recycled saris and then hand block-printed in jaip
         
         <script>
           
-          const images = Array.from(document.querySelectorAll('.new_grid img'));
+          const images = Array.from(document.querySelectorAll('.grid img, .new_grid img'));
         
           if ('IntersectionObserver' in window) {
               const imageObserver = new IntersectionObserver((entries, observer) => {
