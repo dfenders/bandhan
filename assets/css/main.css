@@ -356,4 +356,8 @@ body{
       .grid > a .text {
         font-size: 8vw;
     }
+      
+      .empty{
+          display:none;
+      }
   }
