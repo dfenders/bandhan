@@ -314,7 +314,7 @@ body{
       }
       
       .new_grid img{
-          aspect-ratio: 3/1!important;
+          aspect-ratio: 2/1!important;
       }
       
       .new_grid > a div:not(.img){
