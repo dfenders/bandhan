@@ -297,6 +297,10 @@ body{
       .new_grid img{
           aspect-ratio: 2/1!important;
       }
+      
+      span.price {
+        padding-top: 10px;
+      }
   }
   
   @media screen and (max-width:1024px){
