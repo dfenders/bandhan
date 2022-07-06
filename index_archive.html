@@ -93,12 +93,9 @@ our cotton cloth is made from recycled saris and then hand block-printed in jaip
           const images = Array.from(document.querySelectorAll('.new_grid img'));
         
           if ('IntersectionObserver' in window) {
-            console.log("yes");
               const imageObserver = new IntersectionObserver((entries, observer) => {
                   entries.forEach(entry => {
-                    console.log(entry);
                       if (entry.isIntersecting) {
-                        console.log("is intersecting");
                           const image = entry.target;
 
                           image.src = image.dataset.src;
