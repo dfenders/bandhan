@@ -156,36 +156,6 @@ body{
     display:flex;
     align-items:center;
   }
-
-
-/* some blurry image loading stuff */
-
-.placeholder {
-  background-color: #f6f6f6;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  overflow: hidden;
-}
-
-.placeholder img {
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: opacity 1s linear;
-}
-
-.placeholder img.loaded {
-  opacity: 1;
-}
-
-.img-small {
-  filter: blur(50px);
-  /* this is needed so Safari keeps sharp edges */
-  transform: scale(1);
-}
   
   
   /*.grid > div:nth-of-type(1){ background-image:url('../img/IMG_9320.jpg'); }
@@ -221,12 +191,12 @@ body{
       padding: 0 60px;
   }
 
-  .new_grid .img{
+/*  .new_grid .img{
     background-size:cover;
     background-position:center;    
     width: 100%;
     aspect-ratio: 1/1;
-  }
+  }*/
 /*
   .new_grid div:nth-of-type(1) .img{
     background-image:url('../');    
@@ -253,14 +223,14 @@ body{
       padding:30px 30px 60px;
       font-size:18px;
       line-height:1.5;
-      width:80ch;
+      max-width:80ch;
   }
   
-  .grid > div:hover .text .description{
+/*  .grid > div:hover .text .description{
     opacity:1;
     height: 50%;
     padding-top:20px;
-  }
+  } */
   
   
   footer{
