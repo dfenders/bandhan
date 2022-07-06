@@ -287,17 +287,16 @@ body{
   
   @media screen and (max-width:1440px){
     .grid, .new_grid, .footer_grid{
-        grid-template-columns:1fr 1fr;
+       grid-template-columns:1fr 1fr;
     }
       
-      .top_banner{
-       font-size: 14px;   
-      }
+    .top_banner{
+      font-size: 14px;   
+    }
   }
   
   @media screen and (max-width:1024px){
     .grid, .new_grid, .footer_grid{
-        /*max-width:100%;*/
         grid-template-columns:1fr;
     }
       
@@ -380,5 +379,9 @@ body{
       .breadcrumb{
         padding: 0 0 30px;
         text-align: center;   
+      }
+      
+      span.price {
+        padding-top: 10px;
       }
   }
