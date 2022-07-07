@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>bandhan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/fontello.css" rel="stylesheet">
+    <link href="assets/css/fontello-codes.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <header>
+      <div class="top_banner">
+       free shipping on orders over $100 NZD
+      </div>
+      <div class="logo">
+        <a href="/">          
+          bandhan
+        </a>
+        <nav>
+        <ul>
+          <li><a href="/">home</a></li>
+         <!-- <li>our story</li> -->
+          <li class="active">shop</li>
+          <li>contact</li>
+          <li><img src="assets/img/logo.png" /></li>
+        </ul>
+      </nav>
+      </div>      
+      <!--<div class="hero"></div>            -->
+    </header>
+    <div class="content">            
+      <div id="wraps" class="divider" style="margin-top:0;padding-top:0">
+        products
+      </div>
+      <div class="new_grid">
+        <a href="shop/yellow-elephant-wrap">
+          <img id="yellow_elephants_small_product" src="assets/img/yellow_elephants_small.png" data-src="assets/img/IMG_9497.jpg"
+               style="width: 100%;object-fit: cover;aspect-ratio: 1/1;">
+          <div>yellow elephants cotton wrap<br><span class="price">$24.95</span></div>
+        </a>
+        <a href="shop/cars-and-trucks-wrap">
+           <img id="cars_and_trucks_small_product" src="assets/img/feet_small.png" data-src="assets/img/IMG_9606.jpg"
+               style="width: 100%;object-fit: cover;aspect-ratio: 1/1;">
+          <div>cars and trucks cotton wrap<br><span class="price">$24.95</span></div>
+        </a>
+        <a href="shop/green-cars-wrap">
+           <img id="green_cars_small_product" src="assets/img/green_baby_small.png" data-src="assets/img/IMG_9320.jpg"
+               style="width: 100%;object-fit: cover;aspect-ratio: 1/1;">
+          <div>green cars cotton wrap<br><span class="price">$24.95</span></div>
+        </a>
+        <div class="empty"></div>
+        
+        <a href="shop/washcloth">
+          <img id="washcloth_small_product" src="assets/img/washcloth_small.png" data-src="assets/img/washcloth_set.jpg"
+               style="width: 100%;object-fit: cover;aspect-ratio: 1/1;">
+          <div>cotton washcloth 3 pack<br><span class="price">$27.50</span></div>
+        </a>
+        <a href="shop/headband">
+          <div class="img" style="background-image:url('assets/img/image_6487327.JPG')"></div>
+          <div>cotton headband<br><span class="price">$5.95</span></div>
+        </a>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        
+        <a href="shop/essentials-bundle">
+          <img id="essentials_small_product" src="assets/img/essentials_small.png" data-src="assets/img/essentials.jpg"
+               style="width: 100%;object-fit: cover;aspect-ratio: 1/1;">
+          <div>essentials bundle<br>(wrap + washcloth + headband)<br/><span class="price" style="padding-top:14px!important">$39.95</span></div>
+        </a>                
+        <!--<a>
+          <div class="img" style="background-image:url('assets/img/essentials.jpg')"></div>
+          <div>self-care bundle<br>(wrap + 2x makeup wipe + headband)<br/><span class="price" style="padding-top:14px!important">$39.95</span></div>
+        </a>-->
+      </div>
+
+    </div>
+    <script>
+          
+          const images = Array.from(document.querySelectorAll('.grid img, .new_grid img'));
+        
+          if ('IntersectionObserver' in window) {
+              const imageObserver = new IntersectionObserver((entries, observer) => {
+                  entries.forEach(entry => {
+                      if (entry.isIntersecting) {
+                          const image = entry.target;
+
+                          image.src = image.dataset.src;
+                          //image.onload = () => image.previousElementSibling.remove();
+
+                          imageObserver.unobserve(image);
+                      }
+                  });
+              });
+
+              images.forEach(img => imageObserver.observe(img));
+          }                             
+        </script>
+    <div id="product-component-1656905970862" style="display:none!important"></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'bandhan-434c.myshopify.com',
+      storefrontAccessToken: '54003e4d70bff0658062f3c8df074568',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '6762533257267',
+        node: document.getElementById('product-component-1656905970862'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "display" : "none!important",
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        },
+        "text-align": "left"
+      },
+      "button": {
+        ":hover": {
+          "background-color": "#bf9b93"
+        },
+        "background-color": "#d4aca3",
+        "display" : "none!important",
+        ":focus": {
+          "background-color": "#bf9b93"
+        },
+        "padding-left": "79px",
+        "padding-right": "79px"
+      }
+    },
+    "contents": {
+      "img": false,
+      "button": false,
+      "buttonWithQuantity": true,
+      "title": false,
+      "price": false
+    },
+    "text": {
+      "button": "add to cart"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "display" : "none!important",
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        ":hover": {
+          "background-color": "#bf9b93"
+        },
+        "background-color": "#d4aca3",
+        "display":"none!important",
+        ":focus": {
+          "background-color": "#bf9b93"
+        },
+        "padding-left": "79px",
+        "padding-right": "79px"
+      }
+    },
+    "text": {
+      "button": "add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        ":hover": {
+          "background-color": "#bf9b93"
+        },
+        "background-color": "#d4aca3",
+        ":focus": {
+          "background-color": "#bf9b93"
+        }
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "checkout"
+    },
+    "contents": {
+      "note": true
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#d4aca3",
+        ":hover": {
+          "background-color": "#bf9b93"
+        },
+        ":focus": {
+          "background-color": "#bf9b93"
+        }
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+    <footer>
+      <div class="footer_grid">
+        <div>
+          <h2>site information</h2>
+          <ul>
+            <li><a href="/">home</a></li>
+            <li><a href="/shop">shop</a></li>
+            <li>contact</li>
+            <li>shipping info</li>
+            <li>privacy policy</li>
+          </ul>
+        </div>
+        <div>
+          <h2>sign up for special offers!</h2>
+          <div style="display:flex">
+            <input id="signup_email" type="email" placeholder="email..." />
+            <button id="signup_button">sign up</button>
+          </div>                    
+        </div>
+        <div>
+          <h2>get in touch</h2>
+          <div class="social">
+            <a href="https://www.instagram.com/bandhan_nz" target="_blank"><i class="icon-instagram"></i></a>
+            <i class="icon-facebook"></i>
+            <a href="mailto:info@bandhan.co.nz"><i class="icon-email"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- email submission -->
+    <script>
+      document.querySelector("#signup_button").addEventListener("click", _ => {
+        let email = document.querySelector("#signup_email").value;
+        
+        if(email !== "")
+        {
+          let url = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfVyn_Vs9_-9c4ch85ek9LeuNa2hj-PDfYEmZtJNyInZWV62Q/formResponse"
+          let formBody = `entry.834244758=${email}`
+
+          fetch(url, {
+            'method':'post',
+            'mode': 'no-cors',
+            'headers': {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            'body' : formBody
+          }).then(res => {
+            console.log("do something");
+          });
+        }
+    });
+
+    </script>
+  </body>
+</html>
