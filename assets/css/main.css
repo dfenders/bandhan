@@ -67,7 +67,7 @@ body{
     justify-content: center;
     height:200px;
     overflow:hidden;
-      font-size: 60px;
+      font-size: 4vw;
       font-weight: 300;
       color:#88746b;
   }
@@ -397,4 +397,8 @@ body{
        display: flex;
        flex-direction: column;   
       }
+      
+      .logo > a{
+        font-size: 8vw;
+        }
   }
