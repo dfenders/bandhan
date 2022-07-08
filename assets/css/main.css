@@ -399,6 +399,9 @@ body{
       }
       
       .logo > a{
-        font-size: 8vw;
+        font-size: 10vw;
         }
-  }
+      
+      .logo {
+        padding: 0;
+      }
