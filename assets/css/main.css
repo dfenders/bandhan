@@ -170,13 +170,13 @@ body{
       position: absolute;
   }
  
-  .grid img{
+  .grid img, .new_grid img{
     transition: transform 0.5s, opacity 0.5s;
       opacity:1;
       transform:scale(1);
   }
 
-  .grid a:hover img{
+  .grid a:hover img, .new_grid a:hover img{
       transform:scale(1.1);
       opacity: 0.85;
   }
