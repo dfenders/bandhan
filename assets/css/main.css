@@ -146,7 +146,6 @@ body{
   }
   
   .grid > a{
-    background-color: #D4ACA3;
     height: 600px;
     background-size:cover;
     background-position:center;
@@ -172,11 +171,14 @@ body{
   }
  
   .grid img{
-    transition: transform 0.5s;    
+    transition: transform 0.5s, opacity 0.5s;
+      opacity:1;
+      transform:scale(1);
   }
 
   .grid a:hover img{
       transform:scale(1.2);
+      opacity: 0.85;
   }
 
   .new_section{
