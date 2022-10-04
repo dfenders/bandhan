@@ -301,6 +301,10 @@ body{
       span.price {
         padding-top: 10px;
       }
+      
+      .wrapper{ 
+       aspect-ratio:auto;   
+      }
   }
   
   @media screen and (max-width:1024px){
