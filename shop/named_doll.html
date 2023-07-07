@@ -69,6 +69,14 @@
         node: document.getElementById('product-component-1688725293209'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
+		lineItem: {
+		templates: {
+			customAttributes: '{{#data.customAttributes}}<div><small>{{key}}: {{value}}</small></div>{{/data.customAttributes}}'
+		},
+		contents: {
+			customAttributes: true
+		}
+	},
   "product": {
     "styles": {
       "product": {
