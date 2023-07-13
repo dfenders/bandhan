@@ -1,6 +1,7 @@
 :root{
     --main-brand-colour: #D4ACA3;
     --secondary-brand-colour: #88746b;
+    --max-width: 1600px;
 }
 
 body{
@@ -56,6 +57,11 @@ body{
     background-image:url('../img/baby.jpg');
     background-size:cover;
     background-position:center;
+  }
+
+  .logo, .content, .footer_grid{
+    max-width:var(--max-width);
+    margin:auto;
   }
   
   .logo{
