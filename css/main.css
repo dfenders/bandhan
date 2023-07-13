@@ -266,6 +266,7 @@ body{
     font-family: 'Comfortaa';
     padding: 10px 20px;
     margin-left: auto;
+    cursor:pointer;
   }
   
   span.price {
@@ -375,7 +376,7 @@ body{
       }
       .footer_grid > div:nth-of-type(3){
         padding:0 0 30px;   
-      }
+      }      
       
       .breadcrumb{
         padding: 0 0 30px;
