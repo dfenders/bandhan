@@ -285,6 +285,10 @@ body{
     .grid{
       padding:0;
     }
+
+    .breadcrumb{
+      padding:0 0 30px;
+    }
   }
   
   @media screen and (max-width:1440px){
