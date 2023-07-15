@@ -226,6 +226,10 @@ body{
     line-height:1.5;
     max-width:80ch;
   }  
+
+  .shopify-buy-frame{
+    padding:30px;
+  }
   
   footer{
     margin-top:60px;
