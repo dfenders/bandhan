@@ -410,6 +410,7 @@ body{
       .breadcrumb{
         padding: 0 0 30px;
         text-align: center;   
+        display:none;
       }
       
       span.price {
