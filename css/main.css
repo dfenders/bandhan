@@ -322,7 +322,12 @@ body{
     }
       
       nav {
-       display:none;   
+        padding-bottom: 30px;
+        margin-top: -30px;  
+      }
+
+      nav > ul li:last-of-type{
+        display: none;
       }
       
       .top_banner{
@@ -331,6 +336,7 @@ body{
       
       .logo{
           justify-content: center;
+          flex-direction: column;
       }
       
       .new_grid img{
