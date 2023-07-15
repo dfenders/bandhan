@@ -58,7 +58,7 @@ body{
     background-position:center;
   }
 
-  .logo, .new_grid, .footer_grid{
+  .logo, .new_grid, .breadcrumb, .footer_grid{
     max-width:var(--max-width);
     margin:auto;
   }
