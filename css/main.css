@@ -227,7 +227,7 @@ body{
     max-width:80ch;
   }  
 
-  .shopify-buy-frame > iframe{
+  .shopify-buy-frame:not(.is-sticky) > iframe{
     padding:30px;
   }
   
