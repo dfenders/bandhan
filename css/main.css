@@ -90,8 +90,8 @@ body{
     font-size: 4vw;
     font-weight: 300;
     /*color:var(--secondary-brand-colour); CHRISTMAS ONLY */
-    /*color: var(--main-brand-colour);*/
-    color:#222;
+    color: var(--main-brand-colour);
+    filter: brightness(0.5);
   }
 
   /* SVG STYLE?? */
