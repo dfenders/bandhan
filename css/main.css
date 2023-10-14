@@ -275,13 +275,22 @@ body{
   }
   
   button{
-    background: var(--main-brand-colour);
+    /*background: var(--main-brand-colour);
     border: none;
     color: white;
     font-family: 'Comfortaa';
     padding: 10px 20px;
     margin-left: auto;
-    cursor:pointer;
+    cursor:pointer;*/
+    /* CHRISTMAS ONLY */
+    background: #dddd;
+    border: none;
+    color: black;
+    font-family: 'Comfortaa';
+    padding: 10px 20px;
+    margin-left: auto;
+    cursor: pointer;
+    border-left: 1px solid maroon;
   }
   
   span.price {
