@@ -1,6 +1,9 @@
 :root{
-    --main-brand-colour: #D4ACA3;
-    --secondary-brand-colour: #88746b;
+    /*--main-brand-colour: #D4ACA3;
+    --secondary-brand-colour: #88746b;*/
+    /* christmas only!! */
+    --main-brand-colour: maroon;
+    --secondary-brand-colour: white;
     --max-width: 1600px;
 }
 
@@ -58,7 +61,7 @@ body{
     background-position:center;
   }
 
-  .logo, .new_grid, .breadcrumb, .footer_grid{
+  .logo, .grid, .new_grid, .breadcrumb, .footer_grid{
     max-width:var(--max-width);
     margin:auto;
   }
