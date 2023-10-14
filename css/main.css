@@ -314,7 +314,7 @@ body{
   
   @media screen and (max-width:1024px){
     .grid, .new_grid, .footer_grid{
-        grid-template-columns:1fr;
+        grid-template-columns:1fr!important;
     }
       
       nav {
