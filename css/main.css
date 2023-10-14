@@ -28,6 +28,11 @@ body{
     width:100%;
   }
 
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+
   .breadcrumb{
     padding: 0 60px 30px;
     /*color: var(--secondary-brand-colour); CHRISTMAS ONLY */ 
