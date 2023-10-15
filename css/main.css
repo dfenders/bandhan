@@ -462,3 +462,8 @@ body{
         padding: 0;
       }
     }
+
+
+    .shopify-buy-frame--product.shopify-buy__layout-horizontal{
+      width:100%!important;
+    }
