@@ -349,6 +349,11 @@ body{
   }
   
   @media screen and (max-width:1024px){
+
+    .colour_chart{
+      grid-template-columns:1fr;
+    }
+
     .grid, .new_grid, .footer_grid{
         grid-template-columns:1fr!important;
     }
@@ -466,4 +471,10 @@ body{
 
     .shopify-buy-frame--product.shopify-buy__layout-horizontal{
       width:100%!important;
+    }
+
+    .colour_chart{
+      display:grid;
+      grid-template-columns:repeat(12, 1fr);
+      gap:60px;
     }
