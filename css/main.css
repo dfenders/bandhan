@@ -357,6 +357,14 @@ body{
     .grid, .new_grid, .footer_grid{
         grid-template-columns:1fr!important;
     }
+
+    .grid > div{
+      gap: 20px;
+    }
+
+    .onTop{
+      grid-row: 1;
+    }
       
       nav {
         padding-bottom: 30px;
