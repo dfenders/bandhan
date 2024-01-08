@@ -10,7 +10,7 @@
 body{
     margin:0;      
     font-family:'Comfortaa', sans-serif;
-    background:hsl(0 5% 93% / 1); /* CHRISTMAS ONLY */
+    /*background:hsl(0 5% 93% / 1); /* CHRISTMAS ONLY */
   }
   
   a{
@@ -35,8 +35,8 @@ body{
 
   .breadcrumb{
     padding: 0 60px 30px;
-    /*color: var(--secondary-brand-colour); CHRISTMAS ONLY */ 
-    color: var(--main-brand-colour);
+    color: var(--secondary-brand-colour); 
+  /*  color: var(--main-brand-colour);CHRISTMAS ONLY */ 
   }
   
   .footer_grid{
@@ -89,8 +89,8 @@ body{
     overflow:hidden;
     font-size: 4vw;
     font-weight: 300;
-    /*color:var(--secondary-brand-colour); CHRISTMAS ONLY */
-    color: var(--main-brand-colour);
+    color:var(--secondary-brand-colour); 
+   /* color: var(--main-brand-colour);CHRISTMAS ONLY */
     filter: brightness(0.5);
   }
 
@@ -137,8 +137,8 @@ body{
   
   nav ul li:not(:last-of-type){
     opacity:0.7;
-    /*color:var(--secondary-brand-colour); CHRISTMAS ONLY */
-    color: var(--main-brand-colour);
+    color:var(--secondary-brand-colour); 
+   /* color: var(--main-brand-colour);CHRISTMAS ONLY */
     font-size:20px!important;
   }
 
@@ -150,8 +150,8 @@ body{
     padding:30px 0;
     text-align:center;
     font-size:24px;
-    /*color:var(--secondary-brand-colour); CHRISTMAS ONLY */
-    color: var(--main-brand-colour);
+    color:var(--secondary-brand-colour); 
+   /* color: var(--main-brand-colour);CHRISTMAS ONLY */
     margin-top: 30px;
   }
 
@@ -204,8 +204,8 @@ body{
   }
 
   .new_section{
-    /*background: #F2E6E4; CHRISTMAS ONLY */
-    background: #A04040;
+    background: #F2E6E4; 
+  /*  background: #A04040;CHRISTMAS ONLY */
     margin: 60px 0;
     text-align: center;
     display: flex;
@@ -252,8 +252,8 @@ body{
   footer{
     margin-top:60px;
     width:100%;
-    /*background:var(--secondary-brand-colour); CHRISTMAS ONLY */
-    background:var(--main-brand-colour);
+    background:var(--secondary-brand-colour); 
+  /*  background:var(--main-brand-colour);CHRISTMAS ONLY */
     color:white;
   }
   
@@ -289,29 +289,29 @@ body{
   }
   
   button{
-    /*background: var(--main-brand-colour);
+    background: var(--main-brand-colour);
     border: none;
     color: white;
     font-family: 'Comfortaa';
     padding: 10px 20px;
     margin-left: auto;
-    cursor:pointer;*/
+    cursor:pointer;
     /* CHRISTMAS ONLY */
-    background: #dddd;
+    /*background: #dddd;
     border: none;
     color: black;
     font-family: 'Comfortaa';
     padding: 10px 20px;
     margin-left: auto;
     cursor: pointer;
-    border-left: 1px solid maroon;
+    border-left: 1px solid maroon;*/
   }
   
   span.price {
     padding-top: 30px;
     display: block;
-    /*color: var(--secondary-brand-colour); CHRISTMAS ONLY */
-    color:maroon;
+    color: var(--secondary-brand-colour); 
+   /* color:maroon;CHRISTMAS ONLY */
   }
 
   @media screen and (min-width:1600px){
