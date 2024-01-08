@@ -1,9 +1,9 @@
 :root{
-    /*--main-brand-colour: #D4ACA3;
-    --secondary-brand-colour: #88746b;*/
+    --main-brand-colour: #D4ACA3;
+    --secondary-brand-colour: #88746b;
     /* christmas only!! */
-    --main-brand-colour: maroon;
-    --secondary-brand-colour: white;
+   /* --main-brand-colour: maroon;
+    --secondary-brand-colour: white;*/
     --max-width: 1600px;
 }
 
